@@ -1,0 +1,68 @@
+* {
+    transition: 0.3s linear;
+}
+
+.navbar {
+    padding: 20px;
+}
+
+.row {
+    justify-content: center;
+    text-align: justify;
+}
+
+.container .skills {
+    text-align: center;
+}
+
+.container .row .col .collapse .card {
+    top: 1rem;
+}
+
+h2 {
+    padding: 10px;
+}
+
+h2:hover {
+    letter-spacing: 0.3px;
+    color: rgba(87, 66, 54, 0.863);
+}
+
+#skills .container .skills {
+    height: 20rem;
+    padding: 40px;
+    background: #75584cd3;
+    border-radius: 10px;
+}
+
+.btn {
+    background: #533f36d3;
+    border-color: #af968bd3;
+    padding: 10px;
+}
+
+.btn:hover {
+    background: #af968bd3;
+    border-color: #533f36dd;
+}
+
+#skills .container .skills .col .collapse div ul li {
+    color: #fff;
+    border-radius: 2px;
+    list-style: none;
+    padding: 5px;
+}
+
+#alert .alert {
+    padding: 15px;
+    left: 1px;
+    border-radius: 0;
+    background: #533f36d3;
+    color: #fff;
+    border: none;
+}
+
+#alert .alert .row .col a {
+    text-decoration: none;
+    color: #fff;
+}
