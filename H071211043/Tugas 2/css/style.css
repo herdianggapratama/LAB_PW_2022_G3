@@ -1,0 +1,187 @@
+:root {
+    --blue: #5f5de4;
+    --heading: rgb(237, 231, 255);
+    --heading-background: rgba(151, 146, 219, 0.514);
+    --p-background: rgba(206, 211, 223, 0.514);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: var(--heading-background);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heading:hover {
+    border-radius: 1rem;
+    color: var(--blue);
+    background: rgba(99, 93, 184, 0.514);
+}
+
+.heading:hover span {
+    color: #333;
+}
+
+.heading span {
+    color: var(--blue);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 0.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: var(--blue);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+header .logo:hover {
+    background-color: var(--heading);
+    /* width: 100px; */
+    width: 47px;
+    padding: 5.4px;
+    border-radius: 5px;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover {
+    color: var(--blue);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 120vh;
+    background: url(../images/ps5-background.jpeg);
+    background-size: cover;
+    background-position: 0 30px;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: var(--heading);
+}
+
+.home .content span {
+    font-size: 3.5rem;
+    color: var(--blue);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    color: rgb(215, 212, 221);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about {
+    justify-content: center;
+}
+
+.about .p {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40rem);
+    gap: 2rem;
+
+    justify-content: center;
+}
+
+.about .p p {
+    max-width: 40rem;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.p-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.p-container .product-box {
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background: var(--p-background);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.p-container .product-box img {
+    height: 150px;
+}
+
+.p-container .product-box h3 {
+    color: var(--blue);
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.p-container .product-box p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+}
